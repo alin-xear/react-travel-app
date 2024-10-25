@@ -1,0 +1,9 @@
+.footer {
+  margin-top: auto;
+}
+
+.copyright {
+  /* font-size: 1rem; */
+  color: var(--color-light--1);
+  font-style: italic;
+}
