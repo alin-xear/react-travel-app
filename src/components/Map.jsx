@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./Map.module.css";
 import {
   MapContainer,
@@ -58,6 +58,11 @@ function Map() {
         />
         {cities.map((city) => (
           <Marker
+            // eventHandlers={{
+            //   click: (e) => {
+            //     console.log("marker clicked", e);
+            //   },
+            // }}
             position={[city.position.lat, city.position.lng]}
             key={city.id}
           >
